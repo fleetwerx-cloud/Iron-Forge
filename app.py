@@ -5,7 +5,7 @@ import google.generativeai as genai
 # This checks if the key exists to prevent crashing
 try:
     genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 except:
     st.warning("We are setting up the API key, please wait...")
 
